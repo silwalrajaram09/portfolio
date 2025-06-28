@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajaram - Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    /* Additional styles for single-page navigation */
+    section {
+      min-height: 100vh;
+      padding: 60px 20px;
+      scroll-margin-top: 60px; /* Account for fixed header */
+    }
+    
+    .active {
+      color: #00abf0 !important;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          Logo
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Hi, I am <span class="name">Rajaram</span></h1>
+      <h3>A Web Developer</h3>
+      <p>Welcome to my portfolio website. I specialize in creating modern, responsive websites that deliver great user experiences.</p>
+      <div class="buttonbox">
+        <a href="#" class="btn">Download CV</a>
+        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+      </div>
+   
+    
+    <div class="social-icon">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    </div>
+    <div style="margin-left:50px;" class="image">
+      <img id="zoom-image" src="image.jpeg" alt="Rajaram - Web Developer" class="photo" style="height:400px;width:400px;">
+    </div>
+    
+  </section>
+
+  <!-- About Section -->
+  <!-- Updated About Section -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+    
+    <div class="about-grid">
+      <!-- Profile Card -->
+      <div class="profile-card">
+        <div class="profile-image">
+          <img src="image.jpeg" alt="Rajaram - Web Developer" class="profile-photo">
+          <div class="profile-badge">
+            <i class="fas fa-code"></i>
+            <span>5+ Projects</span>
+          </div>
+        </div>
+        <div class="profile-info">
+          <h3>Rajaram Silwal</h3>
+          <p class="profile-title">Full Stack Developer</p>
+          <div class="profile-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kathmndu, NEPAL</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- About Content -->
+      <div class="about-content">
+        <div class="tab-container">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="skills">Skills</button>
+            <button class="tab-btn" data-tab="experience">Experience</button>
+            <button class="tab-btn" data-tab="education">Education</button>
+          </div>
+          
+          <div class="tab-content active" id="skills">
+            <h3>My Technical Skills</h3>
+            <div class="skills-container">
+              <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Vue.js</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Node.js</span>
+                  <span class="skill-tag">Express</span>
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">Django</span>
+                   <span class="skill-tag">Php</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Tools</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">VS Code</span>
+                  <span class="skill-tag">Figma</span>
+                  <span class="skill-tag">Postman</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="experience">
+            <h3>Professional Journey</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2022 - Present</div>
+                <div class="timeline-content">
+                  <h4>Senior Web Developer</h4>
+                  <p class="company">Tech Solutions Inc.</p>
+                  <ul>
+                    <li>Led frontend development for 3 major projects</li>
+                    <li>Improved application performance by 40%</li>
+                    <li>Mentored junior developers</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-date">2020 - 2022</div>
+                <div class="timeline-content">
+                  <h4>Web Developer</h4>
+                  <p class="company">Digital Creations</p>
+                  <ul>
+                    <li>Developed responsive websites for 15+ clients</li>
+                    <li>Implemented RESTful APIs</li>
+                    <li>Collaborated with design team</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-content" id="education">
+            <h3>Education Background</h3>
+            <div class="education-item">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-details">
+                <h4>Bachelor of Computer Applications</h4>
+                <p class="institution">Patan Multiple Campus</p>
+                <p class="education-year">2022 - present</p>
+              </div>
+            </div>
+            
+            <!-- <div class="education-item">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-details">
+                <h4>Bachelor of Science in IT</h4>
+                <p class="institution">State University</p>
+                <p class="education-year">2015 - 2018</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Achievement Stats -->
+   
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-envelope"></i>silwalrajaram2@gmail.com</p>
+          <p><i class="fas fa-phone"></i>9803291582</p>
+          <p><i class="fas fa-map-marker-alt"></i>Kathmandu,Neoal</p>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="copyright">
+        &copy; 2025 Rajaram. All Rights Reserved.
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Remove active class from all nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.classList.remove('active');
+        });
+        
+        // Add active class to clicked link
+        this.classList.add('active');
+        
+        // Scroll to section
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Update active link on scroll
+    window.addEventListener('scroll', function() {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 100)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+    // Tab System Functionality
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active class from all buttons and contents
+    tabBtns.forEach(btn => btn.classList.remove('active'));
+    tabContents.forEach(content => content.classList.remove('active'));
+    
+    // Add active class to clicked button
+    btn.classList.add('active');
+    
+    // Show corresponding content
+    const tabId = btn.getAttribute('data-tab');
+    document.getElementById(tabId).classList.add('active');
+  });
+});
+
+// Animated Counter for Stats
+const statNumbers = document.querySelectorAll('.stat-number');
+
+const animateCounters = () => {
+  statNumbers.forEach(stat => {
+    const target = parseInt(stat.getAttribute('data-count'));
+    const duration = 2000; // 2 seconds
+    const step = target / (duration / 16); // 60fps
+    
+    let current = 0;
+    const counter = setInterval(() => {
+      current += step;
+      if (current >= target) {
+        clearInterval(counter);
+        stat.textContent = target;
+      } else {
+        stat.textContent = Math.floor(current);
+      }
+    }, 16);
+  });
+};
+
+// Only animate when section is in view
+const aboutSection = document.querySelector('.about-section');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounters();
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+observer.observe(aboutSection);
+  </script>
+</body>
+
+</html>
